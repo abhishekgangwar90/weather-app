@@ -1,0 +1,94 @@
+:root {
+  --color-primary: #eb2f64;
+  --color-primary-light: #ff3366;
+  --color-primary-dark: #ba265d;
+
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --color-green: #007864;
+
+  --color-white: #fff;
+  --color-black: #000;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  color: #777;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  height: inherit;
+
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex: 0 0 10%;
+  padding: 0 15rem;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--color-primary);
+  color: var(--color-grey-light-1);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header ul li {
+  color: var(--color-grey-light-1);
+  margin: 0 2rem;
+  transition: all 0.4s;
+}
+
+header ul li:hover {
+  transform: scale(1.04);
+}
+
+header ul li a:visited,
+a:link {
+  display: inline-block;
+  color: var(--color-grey-light-1);
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+main {
+  display: flex;
+  flex: 1 1 95%;
+  padding: 0 15rem;
+}
+
+footer {
+  display: flex;
+  flex: 0 0 5%;
+  padding: 0 15rem;
+  background-color: var(--color-primary);
+  color: var(--color-grey-light-1);
+  justify-content: center;
+  align-items: center;
+}
