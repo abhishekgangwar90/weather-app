@@ -83,6 +83,26 @@ main {
   padding: 0 15rem;
 }
 
+.search {
+  margin: 5rem auto;
+  width: 80%;
+}
+
+.search input {
+  padding: 2rem 3rem;
+  font-size: 2rem;
+  width: 100%;
+  border-radius: 40px;
+  border: 2px solid #e6e6e6;
+  outline: none;
+  color: var(--color-grey-dark-2);
+  transition: all 0.4s;
+}
+
+.search input:focus {
+  transform: scaleX(1.04);
+}
+
 footer {
   display: flex;
   flex: 0 0 5%;
