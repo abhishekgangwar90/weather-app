@@ -62,7 +62,7 @@ header ul {
 header ul li {
   color: var(--color-grey-light-1);
   margin: 0 2rem;
-  transition: all 0.4s;
+  transition: transform 0.4s;
 }
 
 header ul li:hover {
@@ -84,23 +84,34 @@ main {
 }
 
 .search {
+  height: 10rem;
   margin: 5rem auto;
-  width: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search svg {
+  height: 3rem;
+  width: 3rem;
+  fill: var(--color-grey-dark-3);
 }
 
 .search input {
   padding: 2rem 3rem;
   font-size: 2rem;
-  width: 100%;
+  width: 80%;
   border-radius: 40px;
   border: 2px solid #e6e6e6;
+  margin-right: -6rem;
   outline: none;
   color: var(--color-grey-dark-2);
   transition: all 0.4s;
 }
 
 .search input:focus {
-  transform: scaleX(1.04);
+  width: 90%;
 }
 
 footer {
