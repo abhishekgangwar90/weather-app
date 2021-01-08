@@ -5,6 +5,7 @@ const weatherDetails = require('./weather');
 
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 // constant paths
 const publicPath = path.join(__dirname, '../public') 
@@ -69,6 +70,6 @@ app.get('*', (req,res) =>{
 })
 
 // server start
-app.listen(3000, () =>{
-    console.log('server is running');
+app.listen(port, () =>{
+    console.log('server is running on' + port);
 })

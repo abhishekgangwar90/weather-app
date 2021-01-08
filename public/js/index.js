@@ -1,7 +1,7 @@
 (function(){
 
     function fetchWeatherData(searchKey){
-        fetch(`http://localhost:3000/weather?location=${searchKey}`)
+        fetch(`/weather?location=${searchKey}`)
         .then(res => res.json())
         .then((res) =>{
                 console.log(res)
