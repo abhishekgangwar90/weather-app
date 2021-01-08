@@ -79,6 +79,7 @@ a:link {
 
 main {
   display: flex;
+  flex-direction: column;
   flex: 1 1 95%;
   padding: 0 15rem;
 }
@@ -112,6 +113,21 @@ main {
 
 .search input:focus {
   width: 90%;
+}
+
+.weather-info {
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  grid-gap: 30px;
+}
+
+.weather-info li {
+  text-align: center;
+  font-size: 1.8rem;
 }
 
 footer {
